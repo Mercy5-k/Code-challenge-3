@@ -3,7 +3,7 @@ let currentPost = null;
 let allPosts = [];
 let showingTrash = false;
 
-// 🔔 Show popup notification
+//  Show popup notification
 function showNotification(message) {
   const note = document.getElementById("notification");
   note.textContent = message;
@@ -11,7 +11,7 @@ function showNotification(message) {
   setTimeout(() => note.classList.add("hidden"), 2500);
 }
 
-// 🗂️ Display posts based on current view
+// Display posts based on current view
 function displayPosts(filteredPosts = null) {
   const postList = document.getElementById("post-list");
   postList.innerHTML = "";
@@ -32,7 +32,7 @@ function displayPosts(filteredPosts = null) {
   });
 }
 
-// 🔁 Fetch all posts and refresh the view
+// Fetch all posts and refresh the view
 function refreshAllPosts() {
   fetch(baseUrl)
     .then(res => res.json())
@@ -43,7 +43,7 @@ function refreshAllPosts() {
     });
 }
 
-// 📄 Show single post
+ // Show single post
 function handlePostClick(postId) {
   fetch(`${baseUrl}/${postId}`)
     .then(res => res.json())
@@ -91,7 +91,7 @@ function handlePostClick(postId) {
     });
 }
 
-// ➕ Add new post
+ // Add new post
 function addNewPostListener() {
   const form = document.getElementById("new-post-form");
   form.addEventListener("submit", (e) => {
@@ -116,7 +116,7 @@ function addNewPostListener() {
   });
 }
 
-// ✏️ Show and handle edit form
+ //Show and handle edit form
 function showEditForm() {
   const form = document.getElementById("edit-post-form");
   form.classList.remove("hidden");
@@ -150,7 +150,7 @@ document.getElementById("edit-post-form").addEventListener("submit", (e) => {
     });
 });
 
-// 🗑️ Soft delete post
+ //Soft delete post
 function deleteCurrentPost() {
   if (!confirm("Are you sure you want to delete this post?")) return;
 
@@ -165,7 +165,7 @@ function deleteCurrentPost() {
   });
 }
 
-// 🔍 Search & Sort
+ // Search & Sort
 function setupSearchAndSort() {
   const searchInput = document.getElementById("search");
   const sortSelect = document.getElementById("sort");
@@ -197,12 +197,12 @@ function setupSearchAndSort() {
   });
 }
 
-// 🌗 Theme toggle
+ //Theme toggle
 document.getElementById("toggle-theme").addEventListener("click", () => {
   document.body.classList.toggle("dark");
 });
 
-// 🔁 App init
+ // App init
 function main() {
   fetch(baseUrl)
     .then(res => res.json())
@@ -215,7 +215,7 @@ function main() {
   setupSearchAndSort();
 }
 
-// 🗑️ Recycle bin toggle
+ // Recycle bin toggle
 document.addEventListener("DOMContentLoaded", () => {
   const viewTrashBtn = document.getElementById("view-trash");
   const viewActiveBtn = document.getElementById("view-active");

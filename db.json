@@ -1,0 +1,70 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Grateful Mornings",
+      "content": "Today I woke up early and watched the sunrise. It reminded me to slow down.",
+      "author": "J. Riley",
+      "imageUrl": "assets/sunrise.jpg",
+      "deleted": false
+    },
+    {
+      "id": 2,
+      "title": "A Quiet Coffee",
+      "content": "The smell of fresh coffee and silence is often all I need to find peace in chaos.",
+      "author": "A. Noor",
+      "imageUrl": "assets/coffee.jpg",
+      "deleted": false,
+      "deletedAt": null
+    },
+    {
+      "id": 3,
+      "title": "Evening Walk",
+      "content": "The rustling trees and orange skies help me shake off the stress of the day.",
+      "author": "C. Mateo",
+      "imageUrl": "assets/evening_walk.jpg",
+      "deleted": false
+    },
+    {
+      "id": 4,
+      "title": "Books and Blankets",
+      "content": "Wrapped in a soft blanket with a book — sometimes that's all the therapy I need.",
+      "author": "L. Samuels",
+      "imageUrl": "assets/book.jpg",
+      "deleted": false
+    },
+    {
+      "id": 5,
+      "title": "Rainy Day Thoughts",
+      "content": "Rain taps the window like old memories. It's a day to reflect inward.",
+      "author": "K. Nguyen",
+      "imageUrl": "assets/rain.jpg",
+      "deleted": false,
+      "deletedAt": null
+    },
+    {
+      "id": 6,
+      "title": "Fresh Start",
+      "content": "Today I cleaned my workspace. It feels like a reset — clean desk, clear mind.",
+      "author": "T. Brooks",
+      "imageUrl": "assets/desk.jpg",
+      "deleted": false
+    },
+    {
+      "id": 7,
+      "title": "Phone-Free Hour",
+      "content": "Unplugged for an hour. I noticed the breeze, the birds, even my breath.",
+      "author": "M. Diaz",
+      "imageUrl": "assets/no_phone.jpg",
+      "deleted": false
+    },
+    {
+      "id": 8,
+      "title": "Gratitude List",
+      "content": "Wrote down 5 things I'm thankful for. It helped shift my mood instantly.",
+      "author": "R. Singh",
+      "imageUrl": "assets/gratitude.jpg",
+      "deleted": false
+    }
+  ]
+}

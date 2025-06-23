@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📝 Daily Reflections</title>
+<link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+ <!-- Header with Dark Mode Toggle -->
+  <header>
+   <div class="logo-title-container">
+    <img src="assets/logo.png" alt="Daily Reflections Logo" class="logo" />
+    <h1>📝 Daily Reflections</h1>
+  </div>
+    <button id="toggle-theme">🌗 Dark Mode</button>
+    <button id="view-trash">🗑️ View Recycle Bin</button>
+    <button id="view-active" class="hidden">📋 View Active Posts</button>
+  </header>
+  
+ <!-- About section -->
+  <section id="about" class="form">
+  <h3>Why Daily Reflections?</h3>
+  <p>
+    Life moves fast. <strong>Daily Reflections</strong> is a quiet corner where you can pause, reflect, and write. This blog helps you slow down and make sense of your days — one post at a time. 
+    Add your thoughts, edit memories, or revisit past reflections. Over time, you'll build a timeline of your inner journey.
+  </p>
+</section>
+
+<!-- Search and Sort Controls -->
+<div class="controls">
+  <input type="text" id="search" placeholder="Search your reflections..." />
+  <select id="sort">
+    <option value="">Sort by...</option>
+    <option value="title">Title</option>
+    <option value="author">Author</option>
+  </select>
+</div>
+
+<!-- Container wrapping post list and details for layout -->
+  <div class="container">
+    <!-- Post list container -->
+    <div id="post-list"><p>Loading posts...</p></div>
+
+    <!-- Details of the selected post -->
+    <div id="post-detail"><p>Select a post to view details.</p></div>
+  </div>
+
+
+<!-- form to add new post -->
+  <form id="new-post-form" class="form">
+    <h3>Add New Reflection</h3>
+    <input type="text" id="new-title" placeholder="Title" required />
+    <textarea id="new-content" placeholder="Content" required></textarea>
+    <input type="text" id="new-author" placeholder="Author" required />
+    <button type="submit">Add Post</button>
+  </form>
+
+  <!-- edit form for selected post -->
+  <form id="edit-post-form" class="form hidden">
+    <h4>Edit Reflection</h4>
+    <input type="text" id="edit-title" required />
+    <textarea id="edit-content" rows="5" required></textarea>
+    <button type="submit">Update</button>
+    <button type="button" id="cancel-edit">Cancel</button>
+  </form>
+
+   <!-- Notification area -->
+  <div id="notification" class="hidden">Post saved successfully!</div>
+
+  <!-- Javascript logic file -->
+  <script src="./src/index.js"></script>
+
+  <!-- Footer -->
+<footer id="main-footer">
+  <p>&copy; 2025 Daily Reflections · Built with ❤️</p>
+</footer>
+
+</body>
+  </html> 

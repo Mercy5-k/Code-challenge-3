@@ -179,12 +179,12 @@ You can open it directly in your browser or use Live Server in VS Code.
 
 🖼️ Preview
 
-![Daily Reflections Screenshot](assets/screenshot.png)
+![Daily Reflections Screenshot](assets/demo-screenshot.png)
 
 ## 🧑‍💻 About Me
 
 I'm currently learning full-stack development through Moringa School. I enjoy building small, meaningful applications like this one that blend functionality with design.
 
-GitHub: github.com/Mercy5-k
+GitHub: github.com/Mercy5-k 
 
 ---
